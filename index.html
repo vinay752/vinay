@@ -1,1 +1,388 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="A brief description of this page.">
+		<meta name="theme-color" content="#ffffff">
+
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="My Website">
+		<meta property="og:description" content="A brief description of this page.">
+
+		<title>My Website</title>
+		<link rel="stylesheet" href="style.css">
+        
+            <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header>
+            <nav>   
+			    <a href="./index.html" aria-label="My Website home">
+                    <span>V<span>inay</span></span>
+                    <span>P<span>alakurthy</span></span>
+                </a>
+
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+		</header>
+
+		<main id="main-content">
+            <div id="about">
+                <div class="about-content">
+                    <div class="lhalf">
+			            <h1 class="heading">Vinay Palakurthy</h1>
+			            <p class="sub-heading">M.S. in Data Science | Machine Learning & Applied Systems</p>
+                        <p style=" text-align: justify;">
+                            I hold a Master’s in Data Science and a Bachelor’s in Electronics and Communication Engineering, 
+    with experience at Webexxa. My work focuses on machine learning architectures, autonomous systems, 
+    and efficient computing. Explore my projects and research interests below.
+                        </p>
+                    </div>
+
+                    <div class="rhalf"> 
+                        <img 
+                        src="" 
+                        alt="Vinay Palakurthy" 
+                        class="hero-avatar">
+                    </div>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-buttons">
+                        <a>
+                            <button class="get-in-touch-button" href="mailto:vinaypalakurthy7@gmail.com">
+                                &#9993; Get in Touch
+                            </button>
+                        </a>
+
+                        <a href="Vinay_Palakurthy_CV.pdf" download>
+                            <button class="download-cv-button">
+                                &#x2B73; Download CV
+                            </button>
+                        </a>
+
+                        <!--
+                        <a>
+                            <button class="custom-button" >
+                                Custom button
+                            </button>
+                        </a>
+                        -->
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="research-interests" id="research">
+                <h2>Research Interests</h2>
+                <div class="interests">
+                    <div class="interest-card">
+                        <h3>Multimodal Robotic Perception</h3>
+                        <p>Fusing vision, LiDAR, and proprioceptive sensor streams to build reliable state representations in noisy, unstructured environments.</p>
+                        <div class="skill-tags">
+                            <span>Sensor Fusion</span>
+                            <span>Computer Vision</span>
+                            <span>State Estimation</span>
+                        </div>
+                    </div>
+
+                    <div class="interest-card">
+                        <h3>Spatiotemporal Sequence Modeling</h3>
+                        <p>Applying statistical time-series forecasting and state-space architectures to predict dynamic environment changes and agent trajectories.</p>
+                        <div class="skill-tags">
+                            <span>Time-Series</span>
+                            <span>Transformers</span>
+                            <span>Forecasting</span>
+                        </div>
+                    </div>
+
+                    <div class="interest-card">
+                        <h3>Safe &amp; Uncertainty-Aware Learning</h3>
+                        <p>Quantifying model uncertainty and detecting out-of-distribution states so autonomous systems fail safely in real-world deployments.</p>
+                        <div class="skill-tags">
+                            <span>OOD Detection</span>
+                            <span>Anomaly Detection</span>
+                            <span>Safety</span>
+                        </div>
+                    </div>
+
+                    <div class="interest-card">
+                        <h3>Learning-Based Control &amp; Sim-to-Real</h3>
+                        <p>Bridging high-throughput physics simulations and physical hardware constraints, accounting for actuator latency and sensor noise.</p>
+                        <div class="skill-tags">
+                            <span>Reinforcement Learning</span>
+                            <span>Sim-to-Real</span>
+                            <span>MuJoCo</span>
+                        </div>
+                    </div>
+
+                    <div class="interest-card">
+                        <h3>Active Perception &amp; Exploration</h3>
+                        <p>Designing decision policies that enable robots to actively select viewpoints and actions that maximally reduce environmental uncertainty.</p>
+                        <div class="skill-tags">
+                            <span>Information Gathering</span>
+                            <span>Active Vision</span>
+                            <span>Planning</span>
+                        </div>
+                    </div>
+
+                    <div class="interest-card">
+                        <h3>Embedded &amp; Edge Embodied AI</h3>
+                        <p>Optimizing perception and control pipelines to execute reliably under strict compute, memory, and power budgets on edge hardware.</p>
+                        <div class="skill-tags">
+                            <span>Edge AI</span>
+                            <span>Embedded Systems</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="experience">
+                <h2>Experience</h2>
+                <div class="experienc-cards">
+                    <div id="exp-card-1" class="experience-card">
+                        <div class="role current">
+                            <h3>Business &amp; Data Analyst</h3>
+                        </div>
+                        <p class="company">WebExxa Technologies &bull; Indianapolis, IN (Dec 2024 – Present)</p>
+                        <ul class="role-description">
+                            <li>Engineered automated Python and SQL data processing pipelines to clean, synchronize, and analyze large-scale temporal datasets from disparate sources.</li>
+                            <li>Implemented predictive time-series models and regression analyses in Python to detect anomalous behavioral patterns and evaluate state changes across noisy operational environments.</li>
+                            <li>Designed and optimized relational database schemas and complex queries, cutting data retrieval latency for high-frequency analytical workflows.</li>
+                            <li>Built interactive dashboards and automated tracking tools to translate multivariate data into clear, interpretable visual representations for multi-disciplinary teams.</li>
+                        </ul>
+                    </div>
+
+                    <div id="exp-card-2" class="experience-card">
+                        <div class="role">
+                            <h3>Operations &amp; Reporting Analyst</h3>
+                        </div>
+                        <p class="company">Gudlavalleru Engineering College / Smartbridge &bull; India (Jun 2022 – Dec 2022)</p>
+                        <ul class="role-description">
+                            <li>Contributed to the design of an intelligent transit management platform, focusing on real-time vehicle movement tracking and state monitoring across distributed network nodes.</li>
+                            <li>Processed and validated spatial-temporal operational data streams to automate passenger identity verification pipelines and reduce operational bottlenecks.</li>
+                            <li>Implemented event-triggered automated notification routines to broadcast low-latency updates based on dynamic vehicle telemetry and transit schedules.</li>
+                            <li>Evaluated system workflow latency and physical-system tracking logs to diagnose anomalies, optimize operational throughput, and ensure consistent monitoring reliability.</li>
+                        </ul>
+                    </div>
+
+                    <div id="exp-card-3" class="experience-card">
+                        <div class="role">
+                            <h3>IoT &amp; Embedded Systems Intern</h3>
+                        </div>
+                        <p class="company">Moon Technolabs &bull; Ahmedabad, India (Mar 2021 – Aug 2021)</p>
+                        <ul class="role-description">
+                            <li>Prototyped C/C++ firmware modules on ESP32 and ESP8266 boards for edge sensing and automation testbeds.</li>
+                            <li>Configured driver routines for 6-DOF IMUs (MPU6050) and environmental sensors over I²C and UART, writing interrupt-based handlers to log motion metrics.</li>
+                            <li>Benchmarked wireless telemetry performance using BLE profiles and Wi-Fi transmission scripts to identify latency under packet drop conditions.</li>
+                            <li>Isolated signal anomalies and bus communication faults using logic analyzers, digital multimeters, and circuit schematics, while scripting lightweight JSON/HTTP serializers.</li>
+                        </ul>
+                    </div>
+
+                    <div id="exp-card-4" class="experience-card">
+                        <div class="role">
+                            <h3>Graduate Workshop Assistant &amp; Lab Coordinator</h3>
+                        </div>
+                        <p class="company">Michigan Technological University &amp; GEC (2020 – 2024)</p>
+                        <ul class="role-description">
+                            <li>Conducted Python, R, and Git workshops for graduate students and researchers at Michigan Tech, teaching coding best practices and reproducible scientific workflows.</li>
+                            <li>Served as Electronics Devices Lab Coordinator, training undergraduate students in circuit design, oscilloscope diagnostics, and hardware instrumentation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="education">
+                <h2>Education</h2>
+                <div class="education-cards">
+                    <div class="education-card">
+                        <h3>Master of Science in Data Science</h3>
+                        <p class="institution">Michigan Technological University, Houghton, MI</p>
+                        <p class="year">Dec 2024</p>
+                        <p class="coursework"><strong>Coursework:</strong> Artificial Intelligence, Predictive Modeling, Advanced Data Mining, Time Series Analysis, Statistical Modeling, Big Data Analytics</p>
+                        <ul class="role-description" style="margin-top: 0.75rem;">
+                            <li><strong>Workshop Assistant (Spring 2023 – Spring 2024):</strong> Assisted in conducting Python, R, and Git workshops for graduate students and researchers, focusing on coding best practices and reproducible science.</li>
+                            <li><strong>Student Supervisor (May 2023 – Dec 2024):</strong> Led structured task distribution and direct oversight of student employees at Facilities Management.</li>
+                        </ul>
+                        <div class="skill-tags" style="margin-top: 0.75rem;">
+                            <span>Grad Certificate: Applied Statistics</span>
+                            <span>Grad Certificate: Data Science Foundations</span>
+                        </div>
+                    </div>
+
+                    <div class="education-card">
+                        <h3>Bachelor of Technology in Electronics &amp; Communication Engineering</h3>
+                        <p class="institution">Gudlavalleru Engineering College, Andhra Pradesh, India</p>
+                        <p class="year">Apr 2022</p>
+                        <p class="coursework"><strong>Coursework:</strong> Digital Signal Processing, Signals &amp; Systems, Embedded Systems, Microprocessors &amp; Microcontrollers, VLSI Design, Circuit Design</p>
+                        <ul class="role-description" style="margin-top: 0.75rem;">
+                            <li><strong>Lab Coordinator – Electronics Devices Lab (Fall 2020):</strong> Trained and assisted students with circuit setups and hands-on lab experiments using oscilloscopes and digital multimeters.</li>
+                            <li><strong>Peer Mentor (Spring 2019):</strong> Provided hands-on technical guidance to undergraduate peers, fostering analytical problem-solving.</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="skills-container">
+                <h2>Skills</h2>
+                <div id="skills">
+                    <div class="sub-skills">
+                        <h3>Machine Learning &amp; Statistics</h3>
+                        <div class="skill-icons">
+                            <span><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                            <span><i class="devicon-scikitlearn-plain colored"></i> Scikit-learn</span>
+                            <span><i class="devicon-tensorflow-original colored"></i> TensorFlow</span>
+                            <span><i class="devicon-numpy-plain colored"></i> NumPy &amp; SciPy</span>
+                            <span><i class="devicon-pandas-plain colored"></i> Pandas</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Transformers</span>
+                            <span>Time-Series (ARIMA / State-Space)</span>
+                            <span>OOD &amp; Anomaly Detection</span>
+                            <span>Statistical Validation</span>
+                        </div>
+                    </div>
+
+                    <div class="sub-skills">
+                        <h3>Robotics, Perception &amp; Sim</h3>
+                        <div class="skill-icons">
+                            <span><i class="devicon-ros-original colored"></i> ROS / ROS 2</span>
+                            <span><i class="devicon-opencv-plain colored"></i> OpenCV</span>
+                            <span><i class="devicon-gazebo-plain colored"></i> Gazebo</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span>MuJoCo</span>
+                            <span>NVIDIA Isaac Sim</span>
+                            <span>Reinforcement Learning</span>
+                            <span>Sensor Fusion</span>
+                            <span>Sim-to-Real</span>
+                        </div>
+                    </div>
+
+                    <div class="sub-skills">
+                        <h3>Programming &amp; Data Systems</h3>
+                        <div class="skill-icons">
+                            <span><i class="devicon-python-plain colored"></i> Python</span>
+                            <span><i class="devicon-cplusplus-plain colored"></i> C / C++</span>
+                            <span><i class="devicon-r-plain colored"></i> R (caret, forecast)</span>
+                            <span><i class="devicon-mysql-original colored"></i> MySQL / MariaDB</span>
+                            <span><i class="devicon-linux-plain"></i> Linux / Bash</span>
+                            <span><i class="devicon-docker-plain colored"></i> Docker &amp; Git</span>
+                        </div>
+                    </div>
+
+                    <div class="sub-skills">
+                        <h3>Embedded Hardware &amp; Signals</h3>
+                        <div class="skill-icons">
+                            <span><i class="devicon-arduino-plain colored"></i> Microcontrollers</span>
+                            <span><i class="devicon-raspberrypi-plain colored"></i> Edge Compute</span>
+                            <span><i class="devicon-matlab-plain colored"></i> MATLAB</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Digital Signal Processing (DSP)</span>
+                            <span>Sensor Interfacing</span>
+                            <span>Hardware-in-the-Loop</span>
+                            <span>Edge Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="projects">
+                <h2>Projects</h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <h3>6-DOF IMU Telemetry &amp; Edge Sensing Testbed</h3>
+                        <p class="description">Engineered interrupt-driven C/C++ firmware on ESP32/ESP8266 microcontrollers to acquire and filter real-time inertial motion data from MPU6050 6-DOF IMUs over I²C/UART, benchmarking BLE and Wi-Fi packet latency under signal drop conditions.</p>
+                        <div class="skill-tags">
+                            <span>C / C++</span>
+                            <span>ESP32</span>
+                            <span>MPU6050 IMU</span>
+                            <span>I²C / UART</span>
+                            <span>Edge Telemetry</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Multi-Class Physical Performance Predictive Modeling</h3>
+                        <p class="description">Formulated a comparative statistical modeling pipeline in R (<code>caret</code>) evaluating regularized linear models, Support Vector Machines, and neural networks with Box-Cox transformations and cross-validation to classify physical performance grades.</p>
+                        <div class="skill-tags">
+                            <span>R (caret)</span>
+                            <span>SVMs &amp; Neural Nets</span>
+                            <span>Box-Cox</span>
+                            <span>Statistical Validation</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Spatiotemporal Time-Series Forecasting &amp; Anomaly Pipeline</h3>
+                        <p class="description">Built Box-Jenkins ARIMA and state-space forecasting workflows with ACF/PACF diagnostics and residual analysis to model non-stationary temporal sequences and isolate structural regime shifts in noisy operational data.</p>
+                        <div class="skill-tags">
+                            <span>Python &amp; R</span>
+                            <span>ARIMA / State-Space</span>
+                            <span>Time-Series</span>
+                            <span>Anomaly Detection</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Neural Network Primitives &amp; Data Mining Study</h3>
+                        <p class="description">Implemented core neural network components and high-dimensional data mining pipelines from scratch, analyzing optimization convergence, feature representation trade-offs, and generalization error across benchmark datasets.</p>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>NumPy</span>
+                            <span>Deep Learning</span>
+                            <span>Data Mining</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="contact">
+                <h2>Contact</h2>
+                <p>If you would like to get in touch, please reach out via email or connect on LinkedIn.</p>
+                <ul class="contact-list">
+                    <li>Email: <a href="mailto:vinaypalakurthy7@gmail.com/">vinaypalakurthy7@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/vpal/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+
+		</main>
+
+
+        <a href="#carckers" class="nl-celeb shoot" aria-label="NL" id="crackers">
+
+            <span>V</span>
+            <span>P</span>
+        </a>
+
+        
+		<footer>
+			<small>&copy; <span id="current-year"></span> 2026 Vinay Palakurthy. All rights reserved.</small>
+		</footer>
+	</body>
+</html>
 
