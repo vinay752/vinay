@@ -13,13 +13,18 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
 	display: flex;
+	width: 100%;
+	max-width: 100%;
 	min-height: 100vh;
 	flex-direction: column;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 header,
@@ -71,16 +76,21 @@ header a span > span {
 }
 main {
 	width: min(100% - 2rem, 70rem);
+	max-width: 100%;
 	flex: 1;
 	margin: 0 auto;
 	padding: clamp(3rem, 10vw, 7rem) 0;
-    width: 85%;
 }
 
 main .about-content {
     display: flex;
     flex-direction: row;
+    min-width: 0;
 
+}
+
+main .about-content .lhalf {
+    min-width: 0;
 }
 
 main .about-content .rhalf {
@@ -326,7 +336,90 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  header,
+  footer {
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
   header ul {
     display: none;
+  }
+
+  main {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem 1rem;
+  }
+
+  main .about-content {
+    flex-direction: column;
+  }
+
+  main .about-content .lhalf,
+  main .about-content .rhalf {
+    width: 100%;
+  }
+
+  main .about-content .rhalf {
+    margin-top: 1.25rem;
+  }
+
+  .hero-avatar {
+    width: min(192px, 50vw);
+    height: auto;
+  }
+
+  .contact-container {
+    height: auto;
+    margin: 1rem 0 0;
+  }
+
+  .contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .contact-container a {
+    margin: 0;
+  }
+
+  .role-description,
+  .contact-list,
+  .education-card,
+  .project-card,
+  .interest-card,
+  .sub-skills {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .role-description,
+  .contact-list {
+    padding-right: 0.25rem;
+  }
+
+  .skill-tags,
+  .skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skill-tags span,
+  .skill-icons span {
+    max-width: 100%;
+  }
+
+  .nl-celeb {
+    right: 12px;
+    bottom: 12px;
   }
 }
